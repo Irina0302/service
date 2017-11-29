@@ -1,0 +1,36 @@
+.work {
+  &__row {
+    @include flex-grid-row();
+  }
+  &__title {
+    @include flex-grid-column(12);
+    text-align: center;
+    font-weight: bold;
+    &::before {
+      @include green-before;
+    }
+
+  }
+  &__description {
+    @include flex-grid-column(12);
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  &__info {
+    @include flex-grid-column(6);
+    margin-bottom: 52px;
+    &--first-text {
+      @include flex-grid-column(3);
+    }
+    &--second-text {
+      @include flex-grid-column(3);
+    }
+  }
+  &__img {
+    @include flex-grid-column(6);
+  }
+  &__column {
+    display: flex;
+
+  }
+}

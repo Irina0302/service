@@ -1,0 +1,16 @@
+{
+  "name": "bower-file-project",
+  "description": "My project wicht foundation",
+  "main": "gulpfile.js",
+  "author": "Ira",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.8.1",
+    "foundation-sites": "^6.4.3"
+  }
+}
