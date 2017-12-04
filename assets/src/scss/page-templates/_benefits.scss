@@ -1,0 +1,23 @@
+.benefits {
+  margin-bottom: 150px;
+  &__pulse {
+    @include flex-grid-column(3);
+    text-align: center;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+}
+
+.ion-ios-pulse,
+.ion-ios-infinite,
+.ion-ios-lightbulb-outline,
+.ion-ios-settings {
+  font-size: 30px;
+  &::after {
+    @include green-before;
+  }
+}

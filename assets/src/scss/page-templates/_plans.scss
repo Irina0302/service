@@ -1,0 +1,45 @@
+.plans {
+  margin-bottom: 150px;
+
+  &__title {
+    @include flex-grid-column(12);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    &::before {
+      @include green-before;
+    }
+
+  }
+  &__description {
+    @include flex-grid-column(12);
+    text-align: center;
+    margin-bottom: 100px;
+
+  }
+  &__basic {
+    width: rem-calc(360);
+    &:hover {
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+      transition: 0.5s;
+    }
+    @include flex-grid-column(4);
+    &--title {
+      border-top: 3px solid #7beec7;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 48px;
+      text-transform: uppercase;
+    }
+    &--price {
+      width: 165px;
+      height: 30px;
+      background-color: #7beec7;
+      color: white;
+      text-align: center;
+    }
+    &--list {
+      list-style: none;
+    }
+  }
+}
